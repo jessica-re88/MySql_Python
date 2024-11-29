@@ -44,6 +44,10 @@ try:
     resultados = cursor.fetchall()
     for resultado in resultados:
         print(resultado)
+    
+    # Fechando conexões
+    cursor.close()
+    ligação.close()
 
-        
+
         
