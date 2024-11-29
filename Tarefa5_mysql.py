@@ -49,5 +49,9 @@ try:
     cursor.close()
     ligação.close()
 
+except mysql.connector.Error as erro:
+    print(f'Erro ao estabelecer ligação a base de dados: {erro}')
+
+
 
         
