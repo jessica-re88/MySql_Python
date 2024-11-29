@@ -37,5 +37,13 @@ try:
     ligação.commit()
     print('\nDados adicionados com sucesso!')
 
+    # Seleção e exibição dos dados
+    comando_sql_3 = 'SELECT * FROM clientes_ginásio'
+    cursor.execute(comando_sql_3)
+
+    resultados = cursor.fetchall()
+    for resultado in resultados:
+        print(resultado)
+
         
         
